@@ -6,23 +6,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <style>
   .relative-container {
-    position: relative;
-  }
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
 
-  .text-overlay {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    max-width: 80%;
-    border-radius: 8px;
-  }
+.image-section {
+  position: relative;
+  flex: 1;
+}
 
-  .scroll-container {
-    max-height: 300px;
-    overflow: auto;
-  }
+.text-overlay {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.content-section {
+  flex: 1;
+  padding: 20px;
+}
+
 </style>
 </head>
 <div class="relative-container">
